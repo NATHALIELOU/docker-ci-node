@@ -10,11 +10,9 @@ export default [
       sourceType: "commonjs",
       globals: {
         ...globals.node,
-        ...globals.jest, // ✅ Ajout des globals Jest (test, expect, describe…)
+        ...globals.jest,
       },
     },
-    rules: {
-      // tes règles perso ici si besoin
-    },
+    rules: {},
   },
 ];
