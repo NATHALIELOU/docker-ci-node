@@ -1,15 +1,16 @@
 module.exports = {
-env: {
-nœud : vrai,
-es2021 : vrai,
-},
-étend : ["eslint:recommandé"],
-parserOptions : {
-ecmaVersion : "dernière version",
-sourceType : "module",
-},
-règles: {
-"no-unused-vars": "avertir",
-"no-console": "désactivé",
-},
+  env: {
+    node: true,
+    es2021: true,
+    jest: true, // ← ajoute cette ligne
+  },
+  extends: ["eslint:recommended"],
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  rules: {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+  },
 };
